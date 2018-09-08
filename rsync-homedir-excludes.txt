@@ -9,6 +9,11 @@
 #    USER=<homedir username here>
 #    rsync -aP --exclude-from=rsync-homedir-excludes.txt /home/$USER/ /media/$USER/linuxbackup/home/$USER/
 
+# Seafile shouldn't back up to itself
+Seafile
+
+# Virtualbox is too noisy, backup the exported version
+VirtualBox VMs
 
 ###############################################
 # directories, probably not worth a backup    #
